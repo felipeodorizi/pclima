@@ -2,7 +2,7 @@
 # PClima API
 
 # NAME
-    **PClima API** - Módulo para recuperação de dados climáticos do PCBr.
+    PClima API - Módulo para recuperação de dados climáticos do PCBr.
 
 # DESCRIPTION
         A documentação do Projeto pode ser encontrada no Portal
@@ -18,9 +18,9 @@
     
         Token: consultar a documentação para a geração do Token
     
-        import api as api
+        import pclima as pcl
     
-        Client = api.Client()
+        Client = pcl.Client()
     
         data = Client.getData(
         { "formato": "CSV", "conjunto": "PR0002", "modelo": "MO0003", "experimento": "EX0003", "periodo": "PE0000", "cenario": "CE0001", "variavel": "VR0001", "frequenciaURL": "Mensal", "frequencia": "FR0003", "produto": "PDT0001", "localizacao": "Ponto", "localizacao_pontos": "-23.56/-46.62", "varCDO": "tasmax" }
@@ -50,7 +50,7 @@
      |      token : str
      |          Chave de acesso aos serviços da API
      |  
-     |  **getData(self, apiJSON)**
+     |  getData(self, apiJSON)
      |      Method
      |      -------
      |      O Método envia o JSON e retorna os dados desejados.  
@@ -71,7 +71,7 @@
      |      CSVPontos           DataFrame
      |      CSVPontosTransposta DataFrame
      |  
-     |  **save(self, content, file)**
+     |  save(self, content, file)
      |      Method
      |      -------
      |      O Método decebe a recuperacao do dado e o nome do arquivo
@@ -85,7 +85,7 @@
      |      file : nome do arquivo de saída
      |          Nome do arquivo de saída Ex.: "saida.csv"
      |  
-     |  ----------------------------------------------------------------------
+     | 
 
 
 
