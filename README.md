@@ -17,7 +17,8 @@
         exemplo de uso da API
     
         Token: consultar a documentação para a geração do Token
-    
+        Em Windows colocar o arquivo .pclimaAPIrc no diretório inicial do usuário (ex. C:\User\Cliente)
+
         import pclima as pcl
     
         Client = pcl.Client()
