@@ -1,5 +1,5 @@
 
-# PClima API - teste2
+# PClima API
 
 # NAME
     PClima API - Módulo para recuperação de dados climáticos do PCBr.
